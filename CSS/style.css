@@ -403,7 +403,7 @@ a {
     flex-direction: column;
 }
 
-.tab-header::before {
+.tab-header-item::before {
     content: "";
     width: 50%;
     height: .1875rem;
@@ -415,6 +415,63 @@ a {
     transform: translateX(-50%) scale(0);
     transition: all 0.3s;
 }
+
+.tab-header-item.active::before {
+    transform: translateX(-50%) scale(1);
+}
+
+.tab-header-item {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    border-top: .0625rem solid hsl(var(--clr-grayish-blue) / 0.3);
+    cursor: pointer;
+}
+
+.tab-header-item:last-child {
+    border-bottom: .0625rem solid hsl(var(--clr-grayish-blue) / 0.3);
+}
+
+.tab-header-title {
+    font-weight: var(--fw-medium-500);
+    font-size: 1.125rem;
+    color: hsl(var(--clr-grayish-blue));
+}
+
+.tab-header-title:hover {
+    color: hsl(var(--clr-soft-red));
+}
+
+.tab-header-item.active .tab-header-title {
+    color: hsl(var(--clr-very-dark-blue));
+}
+
+.tab-content-item {
+    display: flex;
+    flex-direction: column;
+    padding-block: 5rem;
+    display: none;
+}
+
+.tab-content-item.active {
+    display: flex;
+}
+
+.tab-content-item-text {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-content-item-title {
+    font-size: 1.5rem;
+}
+
+/* Download Section */
 
 
 
