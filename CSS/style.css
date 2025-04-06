@@ -693,15 +693,69 @@ a {
         margin: 0;
         background-color: hsl(var(--clr-soft-red));
         color: #fff;
-        padding: 0.5rem 2rem;
-        border: .125rem solid hsla(var(--clr-soft-red), 0);
+        padding: 0.5rem 1.5rem;
+        border: .125rem solid hsl(var(--clr-soft-red) / 0);
         transition: all 0.3s;
     }
 
     .login .nav-link:hover {
-        border-color: hsla(var(--clr-soft-red));
+        border-color: hsl(var(--clr-soft-red));
         background-color: transparent;
-        color: hsla(var(--clr-soft-red));
+        color: hsl(var(--clr-soft-red));
+    }
+
+    /* Hero Section */
+    .hero {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-content {
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+    }
+
+    .hero-text-area {
+        text-align: left;
+        padding: 0 1rem 0 0;
+    }
+
+    .hero-button-group {
+        justify-content: flex-start;
+    }
+
+    .hero::before {
+        /* height: 22rem;
+        width: 32rem; */
+        height: 65%;
+        width: 40%;
+        border-radius: 10rem 0 0 10rem;
+        top: 25%;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .hero-image {
+        margin-right: -6rem;
+    }
+
+    /* Features Section */
+    .features {
+        display: flex;
+        justify-content: center;
+    }
+
+    .features::after {
+        /* height: 22rem;
+        width: 32rem; */
+        height: 45%;
+        width: 40%;
+        border-radius: 0 10rem 10rem 0;
+        top: 50%;
     }
 
     
