@@ -758,8 +758,120 @@ a {
         top: 50%;
     }
 
-    
-}
+    .feature-title {
+        font-size: 2rem;
+    }
 
+    .feature-description {
+        max-width: 35rem;
+    }
+
+    .feature-content {
+        align-content: center;
+    }
+
+    .tabs-section {
+        margin-top: 1rem;
+    }
+
+    .tab-header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .tab-header-item {
+        border-bottom: .0625rem solid hsl(var(--clr-grayish-blue) / 0.3);
+        border-top: none;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .tab-header-item::before {
+        width: 100%;
+    }
+
+    .tab-content-item {
+        flex-direction: row;
+    }
+
+    .tab-content-item-text {
+        padding: 2rem 3rem 2rem 4rem;
+        text-align: left;
+        align-items: flex-start;
+        flex-basis: 50%;
+    }
+
+    .tab-content-item-image {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    .tab-content-item-title {
+        font-size: 2rem;
+    }
+
+    /* Downloads Section */
+    .download {
+        display: flex;
+        justify-content: center;
+    }
+
+    .download-title {
+        font-size: 2rem;
+    }
+
+    .download-description {
+        max-width: 35rem;
+    }
+
+    .browser-cards {
+        flex-direction: row;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    .browser-card-item:nth-child(2) {
+        margin-top: 2rem;
+    }
+
+    .browser-card-item:last-child {
+        margin-top: 4rem;
+    }
+
+    /* Faqs Section */
+    .faq {
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq-title {
+        font-size: 2rem;
+    }
+
+    .faq-description {
+        max-width: 35rem;
+    }
+
+    .faq-list {
+        max-width: 35rem;
+    }
+
+    .faq-item-title {
+        font-size: 1.125rem;
+    }
+
+    .faq-button {
+        margin-top: 3rem;
+    }
+
+    /* Newsletters Section */
+    line 976
+
+
+    
+    
+
+
+
+}
 
 
